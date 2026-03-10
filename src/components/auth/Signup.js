@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Signup = ({ onSignup, onSwitchToLogin }) => {
-    const [userData, setUserData] = useState({ username: '', password: '', fullName: '' });
+    const [userData, setUserData] = useState({ username: '', email: '', password: '', fullName: '' });
     const [error, setError] = useState('');
 
     const handleChange = (e) => {

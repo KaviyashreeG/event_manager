@@ -1,7 +1,7 @@
-// import React, { useEffect } from 'react';
-import useEffect from 'react';
 
-const ReminderMananger = ({ events, onComplete, notify }) => {
+import { useEffect } from 'react';
+
+const ReminderManager = ({ events, onComplete, notify }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             const now = new Date();
@@ -41,4 +41,4 @@ const ReminderMananger = ({ events, onComplete, notify }) => {
     return null; // Side-effect only component
 };
 
-export default ReminderMananger;
+export default ReminderManager;

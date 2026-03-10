@@ -3,9 +3,11 @@ import './App.css';
 import EventForm from './components/events/EventForm';
 import EventList from './components/events/EventList';
 import CalenderView from './components/calender/CalenderView';
-import ReminderMananger from './components/reminder/ReminderMananger';
+import ReminderManager from './components/reminder/ReminderManager';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
+
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -147,7 +149,7 @@ function App() {
         ))}
       </div>
 
-      <ReminderMananger
+      <ReminderManager
         events={events}
         onComplete={completeEvent}
         notify={showNotification}
